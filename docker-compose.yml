@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  hello-recruto:
+    build: .
+    container_name: hello-recruto
+    ports:
+      - "2367:2367"
+    restart: unless-stopped
